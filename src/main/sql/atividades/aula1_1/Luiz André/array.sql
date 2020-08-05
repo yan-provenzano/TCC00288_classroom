@@ -31,13 +31,6 @@ end;$$ language plpgsql;
 select * from inscricao();
 
 
-Vbnvcn
-Xnxxncv
-Xxxxxxxxxxxxxx
-yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-
-
 select t1.f1[1][1:2] from (SELECT '{{1,2,3},{4,5,6}}'::int[] AS f1) t1
 
 create table tabela(
