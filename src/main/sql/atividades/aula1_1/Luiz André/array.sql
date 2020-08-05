@@ -1,5 +1,5 @@
 drop function if exists inscricao();
-create or replace function inscricao() 
+create or replace function inscricao()
 returns table(c1 integer, c2 integer, c3 integer) as $$
 declare
     v_a1 integer[3][3];
@@ -25,7 +25,7 @@ begin
         end loop;
         return query select r[i][1], r[i][2], r[i][3];
         i = i + 1;
-    end loop;    
+    end loop;
 end;$$ language plpgsql;
 
 select * from inscricao();
@@ -35,6 +35,8 @@ Vbnvcn
 Xnxxncv
 Xxxxxxxxxxxxxx
 yyyyyyy
+zzzzzzzzzzzzz
+
 
 select t1.f1[1][1:2] from (SELECT '{{1,2,3},{4,5,6}}'::int[] AS f1) t1
 
@@ -71,6 +73,3 @@ INSERT INTO sal_emp
     VALUES ('Carol',
     '{20000, 25000, 25000, 25000}',
     '{{"breakfast", "consulting"}, {"meeting", "lunch"}}');
-
-
-
