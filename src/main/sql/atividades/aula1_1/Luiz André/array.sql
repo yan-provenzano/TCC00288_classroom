@@ -33,8 +33,6 @@ select * from inscricao();
 
 Vbnvcn
 Xnxxncv
-Aaaaaaaaaaa
-bbbbbbb
 
 
 select t1.f1[1][1:2] from (SELECT '{{1,2,3},{4,5,6}}'::int[] AS f1) t1
