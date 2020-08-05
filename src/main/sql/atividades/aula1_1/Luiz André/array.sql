@@ -1,4 +1,4 @@
-﻿drop function if exists inscricao();
+drop function if exists inscricao();
 create or replace function inscricao() 
 returns table(c1 integer, c2 integer, c3 integer) as $$
 declare
@@ -30,6 +30,11 @@ end;$$ language plpgsql;
 
 select * from inscricao();
 
+
+Vbnvcn
+Xnxxncv
+
+Xnc
 
 
 select t1.f1[1][1:2] from (SELECT '{{1,2,3},{4,5,6}}'::int[] AS f1) t1
