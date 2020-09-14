@@ -1,5 +1,3 @@
-#######
-
 drop table if exists pessoa  cascade;
 drop table if exists pessoa2  cascade;
 
@@ -13,8 +11,9 @@ nome varchar,
 endereco varchar
 );
 
-insert into pessoa values ('Luiz Andre','end');
-insert into pessoa values ('Luiz','end2');
+
+insert into pessoa values ('Breno Reis','end');
+insert into pessoa values ('Breno','end2');
 
 
 
