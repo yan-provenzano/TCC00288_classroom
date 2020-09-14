@@ -1,4 +1,5 @@
 drop table if exists pessoa  cascade;
+
 create table pessoa(
 nome varchar,
 endereco varchar
