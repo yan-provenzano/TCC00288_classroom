@@ -3,6 +3,7 @@
 drop table if exists pessoa  cascade;
 drop table if exists pessoa2  cascade;
 
+
 create table pessoa(
 nome varchar,
 endereco varchar
