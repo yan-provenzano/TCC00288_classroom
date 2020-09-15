@@ -58,3 +58,18 @@ COUNT(city) FROM r2));
 
 -- resposta
 --           (vazio)
+
+
+SELECT * FROM r1 as am
+WHERE NOT EXISTS (
+(SELECT mat.city FROM r2 as mat )
+EXCEPT
+(SELECT outro_am.city FROM  r1 as outro_am WHERE outro_am.firstName = am.firstName ) )
+
+-- resposta
+-- x1	y1
+-- x1	y2
+-- x1	y3
+-- x1	y4
+-- x4	y2
+-- x4	y4
