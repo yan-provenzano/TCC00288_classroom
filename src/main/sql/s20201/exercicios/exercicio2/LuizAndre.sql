@@ -48,3 +48,13 @@ WHERE NOT EXISTS (SELECT city
 
 -- resposta
 --           (vazio)
+
+
+SELECT firstName FROM r1
+WHERE r1.firstName IN (
+SELECT firstName FROM r1 INNER JOIN r2 ON r1.city = r2.city
+GROUP BY r1.firstName, r1.city HAVING COUNT(*) = (SELECT
+COUNT(city) FROM r2));
+
+-- resposta
+--           (vazio)
