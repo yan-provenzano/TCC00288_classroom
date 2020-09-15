@@ -31,6 +31,11 @@ from r1 as b join
 group by b.firstName
 having count(b.city) = (select count(*) from r2);
 
+-- resposta
+-- x1
+-- x4
+
+
 
 
 SELECT DISTINCT firstName
@@ -40,3 +45,6 @@ WHERE NOT EXISTS (SELECT city
                   WHERE r2.city NOT IN (SELECT city
                                         FROM r2 AS r3
                               WHERE r1.city = r3.city));
+
+-- resposta
+--           (vazio)
